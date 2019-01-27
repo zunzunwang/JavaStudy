@@ -1,7 +1,5 @@
 package leetcode.question20;
 
-import com.apple.eawt.SystemSleepListener;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
