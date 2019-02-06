@@ -91,6 +91,40 @@ public class BFSBinaryTree {
         return res;
     }
 
+
+    /**
+     * preorder traverse
+     */
+    public void preOrderTraverse1(TreeNode root) {
+        if (root != null) {
+            System.out.print(root.val+"  ");
+            preOrderTraverse1(root.left);
+            preOrderTraverse1(root.right);
+        }
+    }
+
+    /**
+     * inorder traverse
+     */
+    public void inOrderTraverse1(TreeNode root) {
+        if (root != null) {
+            inOrderTraverse1(root.left);
+            System.out.print(root.val+"  ");
+            inOrderTraverse1(root.right);
+        }
+    }
+
+    /**
+     * postorder traverse
+     */
+    public void postOrderTraverse1(TreeNode root) {
+        if (root != null) {
+            postOrderTraverse1(root.left);
+            postOrderTraverse1(root.right);
+            System.out.print(root.val+"  ");
+        }
+    }
+
     public static class TreeNode {
         int val = 0;
         TreeNode left = null;
