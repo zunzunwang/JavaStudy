@@ -2,6 +2,11 @@ package heritage.father;
 
 public class FatherClass {
     public static String valueStaticNotMentioned = "I'm static not mentioned father";
+    public static String valueStaticUniqueFather = "I'm static not mentioned father";
+    static{
+        System.out.println("father static code area.");
+    }
+
     public static String valueStaticMentioned = "I'm static mentioned father";
     public String valueNotStatic = "I'm not static father";
     public String name;

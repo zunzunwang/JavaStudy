@@ -8,6 +8,10 @@ public class SonClass extends FatherClass{
     //如果不声明则会直接引用到父类的静态变量。而非静态变量由于必须实例化才能使用， 所以不会改变父类。
     public static String valueStaticMentioned;
 
+    static{
+        System.out.println("son static code area.");
+    }
+
     //protected int age;
     //String work = "student";
     //private String money = "Dollar";
@@ -27,6 +31,9 @@ public class SonClass extends FatherClass{
     public static void wc() {System.out.println("I'm son, I go to wc");}
 
     public static void main(String[] args){
+        System.out.println(SonClass.valueStaticNotMentioned);
+
+        /*
         //First case, son correspond SonClass
         SonClass sc = new SonClass();
         System.out.println("I'm son static value, I have been mentioned but not init. So I'm " + sc.valueStaticMentioned);
@@ -51,5 +58,6 @@ public class SonClass extends FatherClass{
         sc.wc();
 
         System.out.println("-------------------------------------------");
+        */
     }
 }
