@@ -13,7 +13,7 @@ import java.util.Map;
  * return [0, 1].
  */
 
-public class Solution {
+public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         /*
         for (int i = 0; i <= nums.length - 2; i++) {
@@ -39,7 +39,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution s = new Solution();
+        TwoSum s = new TwoSum();
         int[] nums = new int[]{3, 2, 4};
         int[] res = s.twoSum(nums,6);
         System.out.println(res[0] + " " + res[1]);

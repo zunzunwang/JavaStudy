@@ -7,10 +7,27 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class TestMain {
 
 
+    public static void  main(String args[]){
+        int[] a = {1,2,3};
+        int[] b = {1,2};
+        test(a,b);
+        System.out.println(a[0]);
+
+
+    }
+
+    public static void test(int[] a , int[] b){
+        a = b;
+        b[0] = 5;
+        System.out.println(a[0]);
+    }
+
+    /*
     public static void  main(String args[]){
 
         int cap = 19;
@@ -22,9 +39,12 @@ public class TestMain {
         n |= n >>> 16;
         System.out.println((n < 0) ? 1 : (n >= 30<<1) ? (30<<1) : n + 1);
         Map<String, String> map2 = new Hashtable<>();
+        Set s = map2.keySet();
+
 
 
     }
+    */
 }
 
 /*

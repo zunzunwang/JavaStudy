@@ -17,7 +17,7 @@ public class Price {
      *   所以最终生成的Price类对象的initPrice为20.（当然INSTANCE中也跟着改变）
      * 6.最终只有成员变量currentPrice是用默认值计算下来的。
      */
-    
+
     //定义一个类变量
     final static Price INSTANCE = new Price(2.8);
     static double initPrice = setInitPrice();

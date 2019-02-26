@@ -44,5 +44,7 @@ public class IsContinuedDemo {
 
         System.out.println("l1:" + i.IsContinuous(l1));
 
+
+
     }
 }

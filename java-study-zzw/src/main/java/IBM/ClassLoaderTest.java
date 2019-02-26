@@ -21,6 +21,7 @@ public class ClassLoaderTest {
         System.out.println(Cat.sousType);
         Cat c = new Cat();
         c.getFatherName();
+        System.out.println(c.age);
 
     }
 }
@@ -33,9 +34,11 @@ class Animal {
         System.out.println("animal static init!");
     }
     public String name = getName();
+    public Integer age = 100;
 
     protected String getName(){
         System.out.println("get name Animal");
+        System.out.println("here I want to use " + age);
         return "Animal";
     }
 
@@ -43,6 +46,7 @@ class Animal {
 
 class Cat extends Animal {
     public static String catType="cat";
+    //public Integer age = setAge();
     static {
         System.out.println("cat static init!");
     }
@@ -50,7 +54,13 @@ class Cat extends Animal {
     @Override
     protected String getName(){
         System.out.println("get name cat");
+        System.out.println("here I want to use " + age);
         return "cat";
+    }
+
+    protected Integer setAge(){
+        System.out.println("set age value");
+        return 10;
     }
 
     protected void getFatherName(){
