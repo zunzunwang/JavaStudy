@@ -40,4 +40,7 @@ HELM： linux系统中的yum 掌握HELM的原理 helm模版自定义 helm部署�
  
 运维：
 kubeadm源码修改 达到证书可用期限为10年 
-k8s 能够构建高可用的k8s集群 
+k8s 能够构建高可用的k8s集群
+
+![k8s.png](image/k8s.png)
+API server：所有服务访问统一入口
