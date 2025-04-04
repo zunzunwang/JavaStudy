@@ -1,5 +1,6 @@
 package test;
 
+
 import java.io.IOException;
 import java.io.Reader;
 import java.util.Arrays;
@@ -16,16 +17,54 @@ public class TestMain {
         int[] a = {1,2,3};
         int[] b = {1,2};
         test(a,b);
-        System.out.println(a[0]);
+
+        int a1 = 8;
+        int a2 = 9;
+        System.out.println(a1<<2);
+
+        //if we don't add break, the code will run until the last case without check the condition.
+        System.out.print(a1+a2);
+        switch(a1){
+            case 17:
+                System.out.println("value is 17");
+                break;
+            case 18:
+                System.out.println("value is 18");
+                break;
+            case 19:
+                System.out.println("value is 19");
+                break;
+            case 20:
+                System.out.println("value is 20");
+                break;
+            default:
+                System.out.println("value is default");
+                break;
+        }
+
+
+        first:
+        for(int i=0; i<10; i++){
+            second:
+            for(int j=0;j<10;j++){
+                System.out.println("i: " + i + " j: " + j);
+                break first;
+            }
+        }
+
+
+
 
 
     }
 
     public static void test(int[] a , int[] b){
-        a = b;
-        b[0] = 5;
-        System.out.println(a[0]);
+        System.out.println(Character.getNumericValue('a'));
+        System.out.println(Character.getNumericValue('b'));
+        System.out.println('a' & 'b');
     }
+
+
 
     /*
     public static void  main(String args[]){
@@ -129,5 +168,7 @@ public class TestMain {
     public static void main(String[] args) {
 
     }
+
+
 }
 */
